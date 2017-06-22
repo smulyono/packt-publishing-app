@@ -1,0 +1,10 @@
+# for running mongodb
+mongodb:
+  image: mongo:3.4
+  # environment:
+  #   - MONGO_INITDB_ROOT_USERNAME=admin
+  #   - MONGO_INITDB_ROOT_PASSWORD=password
+  ports:
+    - "27017:27017"
+  volumes:
+    - "/opt/data/mongodb:/data/db"
